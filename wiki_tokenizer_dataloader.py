@@ -158,7 +158,7 @@ def main():
 
     # ── dataset ──
     dataset = TokenDataset(token_ids, CONTEXT_LENGTH, STRIDE)
-    print(f"\nDataset windows      : {len(dataset):,}")
+    print(f"\nNumber of data example      : {len(dataset):,}")
 
     x_sample, y_sample = dataset[0]
     print(f"  x[0] shape         : {x_sample.shape}   (input)")
